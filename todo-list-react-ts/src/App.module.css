@@ -1,0 +1,99 @@
+.content {
+  max-width: 45rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: -1.8rem;
+}
+
+.form input {
+  flex: 1;
+  background: var(--gray-500);
+  border: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+}
+
+.form button[type='submit'] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: var(--font-sm);
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.form button[type='submit'] svg {
+  width: 16px;
+  height: 16px;
+}
+
+.tasksList {
+  margin-top: 4rem;
+}
+
+.tasksList .tasksListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksList .tasksListHeader .tasksInfo strong {
+  margin-right: 0.5rem;
+}
+
+.tasksList .tasksListHeader .tasksInfo strong.taskCreated {
+  color: var(--blue);
+}
+
+.tasksList .tasksListHeader .tasksInfo strong.taskCompleted {
+  color: var(--purple);
+}
+
+.tasksList .tasksListHeader .tasksInfo span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: var(--font-xs);
+  font-weight: bold;
+  padding: 0.125rem 0.5rem;
+  border-radius: 16px;
+}
+
+.tasksContainer {
+  margin-top: 1.5rem;
+}
+
+.tasksContainer .tasksEmpty hr {
+  border: 1px solid var(--gray-400);
+}
+
+.tasksContainer .tasksEmpty .tasksEmptyInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.tasksContainer .tasksEmpty .tasksEmptyInfo svg {
+  color: var(--gray-400);
+}
+
+.tasksContainer .tasksEmpty .tasksEmptyInfo strong {
+  color: var(--gray-300);
+  margin-top: 1rem;
+  line-height: 140%;
+}
+
+.tasksContainer .tasksEmpty .tasksEmptyInfo p {
+  color: var(--gray-300);
+}
